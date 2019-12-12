@@ -14,6 +14,7 @@ def directors_totals(nds)
  while index < directors_database.length do
     key = directors_database[index][:name]
     result[key] = gross_for_director(directors_database[index])
+    # need to pass the method we are accessing an argument  so director_data = directors_database[index]
     index += 1
  end
  result
@@ -24,7 +25,8 @@ end
 # pp directors_database
 
 def gross_for_director(director_data)
-  
+ # director_data = directors_database[index]
+ 
   index = 0
   gross_total = 0
 
